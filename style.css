@@ -105,6 +105,7 @@ nav {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
+  list-style-type: none;
 }
 
 a {
@@ -146,6 +147,7 @@ a:hover {
   display: flex;
   font-size: 0.9rem;
   gap: 1rem;
+  list-style-type: none;
 }
 
 /* TAB */
@@ -169,6 +171,7 @@ a:hover {
   gap: 1rem;
   list-style: none;
   font-size: 1.8 rem;
+  list-style-type: none;
 }
 
 
