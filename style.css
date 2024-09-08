@@ -195,13 +195,23 @@ section {
   height: 80vh;
 }
 
-.section__pic-container-2{
+.section__pic-container-2 {
   display: flex;
-  height: 300px;
-  width: 300px;
+  height: auto;
+  width: 100%;
+  max-width: 300px; /* Maximum size it can take */
+  max-height: 300px;
   margin-top: 1rem;
   border-radius: 30px;
   margin-left: 0.3rem;
+  overflow: hidden; /* Ensures the content stays within the border radius */
+}
+
+.section__pic-container-2 img {
+  width: 100%; /* Make the image take the full width of the container */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 30px; /* Same border radius for the image */
+  object-fit: cover; /* Ensure the image covers the container without distortion */
 }
 
 .section__pic-container {
@@ -373,6 +383,7 @@ section {
   padding: 3rem;
   border-top-left-radius: 5rem;
   border-bottom-right-radius: 5rem;
+  margin-top: 5rem;
 }
 
 .nickname{
@@ -485,6 +496,7 @@ article .icon {
   padding: 3rem;
   border-top-right-radius: 5rem;
   border-bottom-left-radius: 5rem;
+  margin-top: 5rem;
 }
 
 .color-container {
