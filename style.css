@@ -105,7 +105,6 @@ nav {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
-  list-style-type: none;
 }
 
 a {
@@ -171,7 +170,6 @@ a:hover {
   gap: 1rem;
   list-style: none;
   font-size: 1.8 rem;
-  list-style-type: none;
 }
 
 
