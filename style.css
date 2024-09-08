@@ -144,6 +144,8 @@ a:hover {
 
 .navi-links {
   display: flex;
+  font-size: 0.9rem;
+  gap: 1rem;
 }
 
 /* TAB */
@@ -199,7 +201,7 @@ section {
   width: 300px;
   margin-top: 1rem;
   border-radius: 30px;
-  margin-left: 1.3rem;
+  margin-left: 0.3rem;
 }
 
 .section__pic-container {
