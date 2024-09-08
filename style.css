@@ -70,7 +70,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: var(--raisin-black);
+  background: radial-gradient(circle, black, rgb(34, 35, 42),rgb(41, 42, 59), rgb(106, 106, 106) );
 }
 
 html {
