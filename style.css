@@ -199,19 +199,19 @@ section {
   display: flex;
   height: auto;
   width: 100%;
-  max-width: 300px; /* Maximum size it can take */
+  max-width: 300px; 
   max-height: 300px;
   margin-top: 1rem;
   border-radius: 30px;
   margin-left: 0.3rem;
-  overflow: hidden; /* Ensures the content stays within the border radius */
+  overflow: hidden; 
 }
 
 .section__pic-container-2 img {
-  width: 100%; /* Make the image take the full width of the container */
-  height: auto; /* Maintain the aspect ratio */
-  border-radius: 30px; /* Same border radius for the image */
-  object-fit: cover; /* Ensure the image covers the container without distortion */
+  width: 100%; 
+  height: auto; 
+  border-radius: 30px; 
+  object-fit: cover; 
 }
 
 .section__pic-container {
