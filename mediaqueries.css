@@ -1,4 +1,4 @@
-@media screen and (max-width: 4000px) {
+@media screen and (max-width: 2000px) {
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
@@ -22,7 +22,7 @@
 
 @media screen and (max-width: 1200px) {
   #desktop-nav {
-    display: flex;
+    display: none;
   }
 
   #phone-nav {
@@ -31,9 +31,14 @@
   }
 
   #tab-nav {
-    display: none;
+    display: flex;
 
   }
+
+  #wrapper{
+    height: fit-content;
+  }
+
 
   #experience,
   .experience-details-container {
