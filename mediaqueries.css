@@ -22,7 +22,7 @@
   
   @media screen and (max-width: 1200px) {
     #desktop-nav {
-      display: none;
+      display: flex;
     }
   
     #phone-nav {
@@ -31,7 +31,7 @@
     }
   
     #tab-nav {
-      display: flex;
+      display: none;
   
     }
   
@@ -58,11 +58,33 @@
       height: 275px;
       margin: 0 auto 2rem;
     }
+
+    .section__pic-container-2 {
+      display: flex;
+      height: auto;
+      width: 100%;
+      max-width: 2750px; 
+      max-height: 275px;
+      margin-top: 1rem;
+      border-radius: 30px;
+      margin-left: 0.3rem;
+      overflow: hidden; 
+    }
+    
+    .section__pic-container-2 img {
+      width: 100%; 
+      height: auto; 
+      border-radius: 30px; 
+      object-fit: cover; 
+    }
+
     .about-containers {
       margin-top: 0;
     }
   }
   
+
+
   @media screen and (max-width: 600px) {
     #desktop-nav {
       display: none;

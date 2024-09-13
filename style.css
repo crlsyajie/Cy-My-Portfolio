@@ -402,9 +402,10 @@ section {
 .about-details-container {
   justify-content: center;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
   margin-top: 1rem;
 }
+
 
 .about-containers,
 .about-details-container {
@@ -426,7 +427,7 @@ section {
   flex: 1;
   background: black;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: rgb(53, 53, 53) 0.3rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
   color: var(--white);
@@ -497,7 +498,7 @@ article .icon {
   padding: 3rem;
   border-top-right-radius: 5rem;
   border-bottom-left-radius: 5rem;
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 .color-container {
@@ -514,6 +515,14 @@ article .icon {
 .project-title {
   margin: 1rem;
   color: var(--white);
+}
+
+.co-author{
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 1rem;
+  color: var(--white_a10);
 }
 
 .project-btn {
