@@ -401,6 +401,7 @@ section {
   margin-top: 5rem;
 }
 
+
 .nickname{
     text-align: center;
     justify-content: space-around;
@@ -446,6 +447,7 @@ section {
   text-align: center;
   color: var(--white);
 }
+
 
 .text-container{
     justify-content: space-between;
@@ -565,6 +567,101 @@ input:checked + label .description {
 }
 
 
+/* BANNERS */
+
+#artworks{
+  margin-top: 6rem;
+  margin-bottom: 7rem;
+}
+
+.banners{
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    position: relative;
+}
+.banners .sliders{
+    position: absolute;
+    width: 170px;
+    height: 200px;
+    top: 10%;
+    left: calc(50% - 85px);
+    transform-style: preserve-3d;
+    transform: perspective(800px);
+    animation: autoRun 20s linear infinite;
+    z-index: 2;
+}
+@keyframes autoRun{
+    from{
+        transform: perspective(800px) rotateX(-16deg) rotateY(0deg);
+    }to{
+        transform: perspective(800px) rotateX(-16deg) rotateY(360deg);
+    }
+}
+
+.banners .sliders .items{
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: 
+        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+        translateZ(400px);
+}
+.banners .sliders .items img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: solid 2px var(--white);
+}
+.banners .contents{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(1200px, 100vw);
+    height: max-content;
+    padding-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.banners .contents h1{
+    font-family: 'ICA Rubrik';
+    font-size: 12em;
+    line-height: 1em;
+    color: var(--white);
+    position: relative;
+}
+.banners .contents h1::after{
+    position: absolute;
+    inset: 0 0 0 0;
+    content: attr(data-content);
+    z-index: 2;
+    -webkit-text-stroke: 1.5px #d2d2d2;
+    color: transparent;
+}
+.banners .contents .authors{
+    text-align: right;
+    max-width: 180px;
+}
+.banners .contents h2{
+    font-size: 2.5em;
+}
+.banners .contents .model{
+    width: 100%;
+    height: 65vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-size: auto 120%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 1;
+}
+
+
+
 /* EXPERIENCE SECTION */
 
 #experience {
@@ -586,6 +683,8 @@ input:checked + label .description {
   flex-direction: column;
 }
 
+
+
 .article-container {
   display: flex;
   text-align: initial;
@@ -593,6 +692,7 @@ input:checked + label .description {
   flex-direction: row;
   gap: 1rem;
   justify-content: space-between;
+  align-items: center;
 }
 
 article {
