@@ -449,7 +449,7 @@ section {
   color: var(--white);
 }
 
-h3{
+.heading3 {
   margin-top: 0.8rem;
   margin-bottom: 1rem;
 }
