@@ -532,7 +532,7 @@ section {
 }
 
 .description p {
-  color: #b0b0ba;
+  color: var(--white);
   padding-top: 5px;
 }
 
@@ -560,7 +560,7 @@ input:checked + label .description {
   background-image: url('./images/459651636_513074027977262_4576838433371601191_n.jpg');
 }
 .card[for="c3"] {
-  background-image: url('./images/BSIT_1204_Fetizanan_CY_PIC.jpg');
+  background-image: url('./images/457851549_402019309594471_7210508733290643232_n.jpg');
 }
 .card[for="c4"] {
   background-image: url('./images/IMG_2764.JPG');
@@ -572,6 +572,15 @@ input:checked + label .description {
 #artworks{
   margin-top: 6rem;
   margin-bottom: 7rem;
+}
+
+.insdes{
+  margin-top: 1rem;
+}
+
+.heading4{
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .banners{
