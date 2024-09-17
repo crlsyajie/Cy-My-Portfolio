@@ -4,36 +4,35 @@ Portfolio Website - Carlos Yajie Fetizanan
 
 Project Overview:
 
-        --Personal portfolio website showcasing projects, skills, and experience.
-        --Fully responsive design optimized for desktop, tablet, and mobile.
-        --Built with HTML, CSS, and media queries for responsiveness.
-        --Animations enhance user experience.
+            --Personal portfolio website showcasing projects, skills, and experience.
+            --Fully responsive design optimized for desktop, tablet, and mobile.
+            --Built with HTML, CSS, and media queries for responsiveness.
+            --Animations enhance user experience.
 
 
 Design Choices:
 
 1. Responsive Layout:
 
-        --Approach: Used flexbox and media queries for smooth adaptation across screen sizes.
-        --Why: To ensure an optimized user experience across desktop, tablet, and mobile devices.
+            --Approach: Used flexbox and media queries for smooth adaptation across screen sizes.
+            --Why: To ensure an optimized user experience across desktop, tablet, and mobile devices.
 
-Implementation:
+            --Implementation:
+            
             --Desktop: Horizontal navigation bar, large images, and text.
             --Tablet: Compact layout with a different navigation style.
             --Mobile: Vertical layout, smaller image sizes for faster loading.
-            
+
             --Specific Screen Sizes:
             --Features are adjusted or hidden depending on the screen width.
             --Viable screen sizes are: 320px, 375px, 425px, 768px, 1024px, and 1440px.
 
 2. CSS Root Variables and Preset Design:
 
-        --Approach: Defined global styles using
-        in CSS for consistency.
+            --Approach: Defined global styles using in CSS for consistency.
+            --Why: Easier maintenance and updates for colors, fonts, and spacing.
 
-        --Why: Easier maintenance and updates for colors, fonts, and spacing.
-
-Implementation:
+            --Implementation:
 
             --Variables for primary colors, font sizes, and margin values.
             --Example:
@@ -51,7 +50,8 @@ Implementation:
             --Approach: Incorporated CSS animations via @keyframes for dynamic effects.
             -- Why: To make the site more interactive and engaging without overwhelming the user.
 
-Implementation:
+            --Implementation:
+
                 --Used fading, sliding, and hover effects.
                 --Example: A fade-in animation for project images.
                 --css
@@ -67,7 +67,9 @@ Implementation:
 
             --Approach: Resized and compressed images for faster loading times.
             --Why: Crucial for performance, especially on mobile devices.
-Implementation: 
+
+            --Implementation: 
+
                 --Compressed images and followed proper naming conventions (e.g., no spaces).
 
 5.Simple and Clean Design:
@@ -75,7 +77,8 @@ Implementation:
             --Approach: Minimalist design with focus on readability and simplicity.
             --Why: Enhances usability and navigation through a clean aesthetic.
 
-Implementation:
+            --Implementation:
+
                 --Minimal color palette (black, white, blue accents).
                 --Focus on whitespace for clarity.
 
