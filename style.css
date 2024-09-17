@@ -290,9 +290,10 @@ section {
   }
 
 .section__text__p2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   margin-bottom: 3rem;
   color: var(--white_a10);
+  white-space: pre-line;
 }
 
 
@@ -448,11 +449,25 @@ section {
   color: var(--white);
 }
 
-
+h3{
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
 .text-container{
     justify-content: space-between;
     text-align: center;
     color:black;
+}
+
+p a.certlink{
+    color: var(--white);
+    text-decoration: none;
+    text-decoration-color: black;  
+}
+
+p a.certlink:hover {
+  color: grey;
+  font-weight: bold;
 }
 
 .section-container {
@@ -750,6 +765,7 @@ article .icon {
   text-align: center;
   font-weight: bold;
   margin: 1rem;
+  gap: 1rem;
   color: var(--white_a10);
 }
 
