@@ -21,8 +21,8 @@ Implementation:
             --Desktop: Horizontal navigation bar, large images, and text.
             --Tablet: Compact layout with a different navigation style.
             --Mobile: Vertical layout, smaller image sizes for faster loading.
-
-Specific Screen Sizes:
+            
+            --Specific Screen Sizes:
             --Features are adjusted or hidden depending on the screen width.
             --Viable screen sizes are: 320px, 375px, 425px, 768px, 1024px, and 1440px.
 
