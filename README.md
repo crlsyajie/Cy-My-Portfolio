@@ -4,18 +4,18 @@ Portfolio Website - Carlos Yajie Fetizanan
 
 Project Overview:
 
-    --Personal portfolio website showcasing projects, skills, and experience.
-    --Fully responsive design optimized for desktop, tablet, and mobile.
-    --Built with HTML, CSS, and media queries for responsiveness.
-    --Animations enhance user experience.
+        --Personal portfolio website showcasing projects, skills, and experience.
+        --Fully responsive design optimized for desktop, tablet, and mobile.
+        --Built with HTML, CSS, and media queries for responsiveness.
+        --Animations enhance user experience.
 
 
 Design Choices:
 
 1. Responsive Layout:
 
-    --Approach: Used flexbox and media queries for smooth adaptation across screen sizes.
-    --Why: To ensure an optimized user experience across desktop, tablet, and mobile devices.
+        --Approach: Used flexbox and media queries for smooth adaptation across screen sizes.
+        --Why: To ensure an optimized user experience across desktop, tablet, and mobile devices.
 
 Implementation:
         --Desktop: Horizontal navigation bar, large images, and text.
