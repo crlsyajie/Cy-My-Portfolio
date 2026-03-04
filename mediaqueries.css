@@ -68,19 +68,19 @@
     display: flex;
     height: auto;
     width: 100%;
-    max-width: 2750px; 
+    max-width: 2750px;
     max-height: 275px;
     margin-top: 1rem;
     border-radius: 30px;
     margin-left: 0.3rem;
-    overflow: hidden; 
+    overflow: hidden;
   }
-  
+
   .section__pic-container-2 img {
-    width: 100%; 
-    height: auto; 
-    border-radius: 30px; 
-    object-fit: cover; 
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    object-fit: cover;
   }
 
   .about-containers {
@@ -179,14 +179,14 @@
   }
 
   .banners .sliders .items {
-    transform: 
+    transform:
       rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg))
       translateZ(400px);
   }
 
   .banners .contents {
     position: absolute;
-    bottom: 1rem; 
+    bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -217,15 +217,15 @@
       left: calc(50% - 65px);
   }
   .banners .sliders .items{
-      transform: 
+      transform:
           rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
           translateZ(260px);
   }
   .banners .contents h1{
       text-align: center;
       width: 100%;
-      text-shadow: 0 8px 16px #000; 
-      font-size: 6em; 
+      text-shadow: 0 8px 16px #000;
+      font-size: 6em;
   }
   .banners .contents .authors{
       color: #fff;
@@ -241,16 +241,30 @@
 
 @media screen and (max-width: 767px) {
   .banners .sliders{
-      width: 80px; 
-      height: 120px; 
+      width: 80px;
+      height: 120px;
       left: calc(50% - 40px);
   }
   .banners .sliders .items{
-      transform: 
+      transform:
           rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
-          translateZ(150px); 
+          translateZ(150px);
   }
   .banners .contents h1{
-      font-size: 4em; 
+      font-size: 4em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .services-container {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+    padding: 0 1rem !important;
+    flex-direction: column !important;
+  }
+
+  .services-container .service-card {
+    max-width: 100% !important;
+    margin: 0 auto;
   }
 }
