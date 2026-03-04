@@ -271,6 +271,49 @@
 
 
 @media screen and (max-width: 800px) {
+  #tab-nav {
+    display: none !important;
+  }
+
+  #phone-nav {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0 5%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  #phone-nav .navi-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    font-size: 0.9rem;
+  }
+
+  #phone-nav .p-logo {
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  .title-accent {
+    font-size: 2rem !important;
+  }
+
+  #about > div {
+    flex-direction: column-reverse;
+  }
+
+  #about > div > div:first-child {
+    position: static !important;
+  }
+
   /* Contact Form Adjustments */
   #contact form {
     grid-template-columns: 1fr !important;

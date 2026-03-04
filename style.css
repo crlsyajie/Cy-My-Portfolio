@@ -1,9 +1,10 @@
 
   :root {
-    --bg-main: #1e1e1e;
-    --bg-card: #1b1b1b;
-    --accent: #f17b20;
+    --bg-main: #000000;
+    --bg-card: rgba(255, 255, 255, 0.05);
+    --accent: #0A84FF; /* iOS Blue */
     --text-main: #f1f1f1;
+    --glass-border: 1px solid rgba(255, 255, 255, 0.1);
 
 
 /*
@@ -77,6 +78,19 @@
 body {
   font-family: "Poppins", sans-serif;
   background: var(--bg-main);
+  scroll-behavior: smooth;
+}
+
+/* Fade-in Animation Classes */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
   color: var(--text-main);
 }
 
@@ -103,9 +117,17 @@ nav,
 }
 
 nav {
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  height: 17vh;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 0 5%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: var(--glass-border);
 }
 
 .nav-links {
@@ -299,11 +321,12 @@ section {
 }
 
 .title-accent {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 700;
   text-align: left;
   color: var(--accent);
   margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
 
@@ -344,11 +367,11 @@ section {
 }
 
 .btn {
-  font-weight: 600;
+  font-weight: 500;
   transition: all 300ms ease;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.8rem;
   width: auto;
-  border-radius: 0.5rem; /* Less rounded to match screenshot */
+  border-radius: 14px;
   cursor: pointer;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
@@ -356,24 +379,28 @@ section {
 
 .btn-primary {
   background: var(--accent);
-  color: var(--bg-main);
+  color: #fff;
   border: none;
+  box-shadow: 0 4px 15px rgba(10, 132, 255, 0.3);
 }
 
 .btn-primary:hover {
-  background: #f89040; /* slightly lighter orange */
-  color: var(--bg-main);
+  background: #007aff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(10, 132, 255, 0.4);
 }
 
 .btn-outline {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.05);
   color: var(--text-main);
-  border: 1px solid var(--text-main);
+  border: var(--glass-border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .btn-outline:hover {
-  background: var(--text-main);
-  color: var(--bg-main);
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
 }
 
 /* ABOUT SECTION */
@@ -470,6 +497,22 @@ p a.certlink:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* PORTFOLIO CARD */
+.portfolio-card {
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  background: var(--bg-card);
+  border: var(--glass-border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .container {
@@ -820,14 +863,20 @@ footer p {
 
 .service-card {
   background: var(--bg-card);
-  padding: 2.5rem 2rem;
-  border-radius: 0.5rem;
+  padding: 2rem;
+  border-radius: 20px;
   text-align: center;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  border: var(--glass-border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .service-card:hover {
   transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
 
