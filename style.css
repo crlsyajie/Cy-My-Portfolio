@@ -1,9 +1,15 @@
-:root {
 
-/*    
+  :root {
+    --bg-main: #1e1e1e;
+    --bg-card: #1b1b1b;
+    --accent: #f17b20;
+    --text-main: #f1f1f1;
+
+
+/*
     colors
 */
-  
+
     --raisin-black: rgb(12, 13, 15);
     --roman-silver: hsla(229, 10%, 57%, 1);
     --eerie-black: hsla(228, 9%, 10%, 1);
@@ -11,13 +17,13 @@
     --white: hsla(0, 0%, 100%, 1);
     --white_a10: hsla(0, 40%, 98%, 0.445);
     --white_a5: hsla(0, 0%, 100%, 0.05);
-  
+
 /*
     typography
 */
-  
+
     --ff-syne: 'Syne', sans-serif;
-  
+
     --fs-1: 4.8rem;
     --fs-2: 4.5rem;
     --fs-3: 4rem;
@@ -26,39 +32,39 @@
     --fs-6: 1.8rem;
     --fs-7: 1.4rem;
     --fs-8: 1.2rem;
-    
+
     --fw-800: 800;
     --fw-700: 700;
-  
+
 /*
     spacing
 */
-  
+
     --section-padding: 100px;
-  
+
 /*
     * border radius
 */
-  
+
     --radius-pill: 100px;
     --radius-circle: 50%;
     --blob-radius: 52% 48% 59% 41% / 53% 40% 60% 47%;
-  
+
 /*
     * transition
 */
-  
+
     --transition-1: 0.25s ease;
     --transition-2: 0.5s ease;
     --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
     --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
     --cubic-bounce: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     --cubic-ease-out: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
-  
+
   }
 
 
-  
+
 /* GENERAL */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
@@ -70,7 +76,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: radial-gradient(circle, black, rgb(34, 35, 42),rgb(41, 42, 59), rgb(106, 106, 106));
+  background: var(--bg-main);
+  color: var(--text-main);
 }
 
 html {
@@ -78,7 +85,7 @@ html {
 }
 
 p {
-  color: rgb(222, 222, 222);
+  color: var(--text-main);
 }
 
 /* TRANSITION */
@@ -153,7 +160,7 @@ a:hover {
 
 .t-logo{
     font-size: 1.5rem;
-    
+
   color: var(--white);
 }
 
@@ -200,19 +207,19 @@ section {
   display: flex;
   height: auto;
   width: 100%;
-  max-width: 300px; 
+  max-width: 300px;
   max-height: 300px;
   margin-top: 1rem;
   border-radius: 30px;
   margin-left: 0.3rem;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .section__pic-container-2 img {
-  width: 100%; 
-  height: auto; 
-  border-radius: 30px; 
-  object-fit: cover; 
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  object-fit: cover;
 }
 
 .section__pic-container {
@@ -220,36 +227,15 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
-  border-radius: var(--blob-radius);
+  border-radius: 50%;
   overflow: hidden;
-  animation: blobAnim 30s linear infinite;
+  border: 5px solid var(--bg-card); /* Add a slight border for elegance */
 }
-
-@keyframes blobAnim {
-
-    0%,
-    100% { border-radius: var(--blob-radius); }
-  
-    10% { border-radius: 33% 67% 50% 50% / 43% 39% 61% 57%; }
-  
-    20% { border-radius: 51% 49% 31% 69% / 65% 39% 61% 35%; }
-  
-    30% { border-radius: 51% 49% 56% 44% / 45% 39% 61% 55%; }
-  
-    40% { border-radius: 66% 34% 33% 67% / 48% 71% 39% 52%; }
-  
-    50% { border-radius: 46% 54% 33% 67% / 48% 30% 70% 52%; }
-  
-    60% { border-radius: 46% 54% 56% 44% / 48% 30% 70% 52%; }
-  
-    70% { border-radius: 46% 54% 56% 44% / 65% 53% 47% 35%; }
-  
-    80% { border-radius: 67% 33% 56% 44% / 37% 53% 47% 63%; }
-  
-    90% { border-radius: 46% 54% 32% 68% / 37% 53% 47% 63%; }
-  
-  }
-  
+.section__pic-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .section__text {
   align-self: center;
@@ -299,18 +285,27 @@ section {
 
 
 .title {
-    font-size: 3rem;
-    text-align: center;
-    color: var(--white);
-    margin-bottom: 2rem;
-  }
+  font-size: 3rem;
+  text-align: left;
+  color: var(--text-main);
+  margin-bottom: 2rem;
+}
 
 
 .title2 {
   font-size: 3rem;
-  text-align: center;
-  color: var(--raisin-black);
+  text-align: left;
+  color: var(--text-main);
 }
+
+.title-accent {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: left;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
 
 .title3 {
     font-size: 3rem;
@@ -344,63 +339,46 @@ section {
 
 .btn-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1rem;
 }
 
 .btn {
   font-weight: 600;
   transition: all 300ms ease;
-  padding: 1rem;
-  width: 8rem;
-  border-radius: 2rem;
-  color: var(--white);
-}
-
-.btn-color-1,
-.btn-color-2 {
-  border: rgb(236, 236, 236) 0.1rem solid;
-}
-
-.btn-color-1:hover,
-.btn-color-2:hover {
+  padding: 1rem 2rem;
+  width: auto;
+  border-radius: 0.5rem; /* Less rounded to match screenshot */
   cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
 }
 
-.btn-color-1,
-.btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: var(--white);
+.btn-primary {
+  background: var(--accent);
+  color: var(--bg-main);
+  border: none;
 }
 
-.btn-color-1:hover {
-  background: var(--black);
-  color: var(--white);
+.btn-primary:hover {
+  background: #f89040; /* slightly lighter orange */
+  color: var(--bg-main);
 }
 
-.btn-color-2 {
-  background: none;
+.btn-outline {
+  background: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--text-main);
 }
 
-.btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
-}
-
-.btn-container {
-  gap: 1rem;
+.btn-outline:hover {
+  background: var(--text-main);
+  color: var(--bg-main);
 }
 
 /* ABOUT SECTION */
 
-#about {
-    
-  position: relative;
-  background-color: var(--white);
-  padding: 3rem;
-  border-top-left-radius: 5rem;
-  border-bottom-right-radius: 5rem;
-  margin-top: 5rem;
-}
+
 
 
 .nickname{
@@ -462,7 +440,7 @@ section {
 p a.certlink{
     color: var(--white);
     text-decoration: none;
-    text-decoration-color: black;  
+    text-decoration-color: black;
 }
 
 p a.certlink:hover {
@@ -547,8 +525,7 @@ p a.certlink:hover {
 }
 
 .description p {
-  color: var(--white);
-  padding-top: 5px;
+  color: var(--text-main);
 }
 
 .description h4 {
@@ -626,7 +603,7 @@ input:checked + label .description {
 .banners .sliders .items{
     position: absolute;
     inset: 0 0 0 0;
-    transform: 
+    transform:
         rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
         translateZ(400px);
 }
@@ -698,7 +675,7 @@ input:checked + label .description {
   color: rgb(116, 116, 116);
   font-weight: 600;
   font-size: 1.75rem;
-  
+
 }
 
 .experience-details-container {
@@ -828,8 +805,27 @@ footer p {
 
 
 
- 
-  
- 
 
-  
+
+
+
+
+/* SERVICES */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: var(--bg-card);
+  padding: 2.5rem 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
