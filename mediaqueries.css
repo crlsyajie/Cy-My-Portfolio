@@ -268,3 +268,26 @@
     margin: 0 auto;
   }
 }
+
+
+@media screen and (max-width: 800px) {
+  /* Contact Form Adjustments */
+  #contact form {
+    grid-template-columns: 1fr !important;
+  }
+  #contact form textarea {
+    grid-row: auto !important;
+  }
+
+  /* Footer Contact Adjustments */
+  footer div {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    align-items: center !important;
+  }
+
+  /* Skill Circles Adjustments */
+  #experience > div {
+    gap: 2rem !important;
+  }
+}
