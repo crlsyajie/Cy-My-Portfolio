@@ -2,30 +2,22 @@
 
 
 :root {
-  --bg-main: #f8f9fa;
-  --bg-card: #ffffff;
-  --text-main: #212529;
-  --text-muted: #6c757d;
+  --bg-main: #121212;
+  --bg-card: #1a1a1a;
+  --text-main: #ffffff;
+  --text-muted: #a0a0a0;
   --accent: #ff8c00;
-  --glass-border: 1px solid rgba(0, 0, 0, 0.05);
-  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.05);
+  --glass-bg: rgba(26, 26, 26, 0.7);
+  --white: #ffffff;
+  --raisin-black: #121212;
+  --white_a10: rgba(255,255,255,0.7);
 }
-
-body {
-  background: var(--bg-main);
-  color: var(--text-main);
-}
-
-
-body {
-  background: var(--bg-main);
-  color: var(--text-main);
-}
-
 
 body {
   font-family: "Poppins", sans-serif;
   background: var(--bg-main);
+  color: var(--text-main);
   scroll-behavior: smooth;
 }
 
@@ -64,7 +56,7 @@ nav {
   top: 0;
   z-index: 1000;
   padding: 0 5%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(18, 18, 18, 0.8);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: var(--glass-border);
@@ -73,26 +65,22 @@ nav {
 .nav-links {
   gap: 2rem;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 a {
-
-  color: var(--white);
+  color: var(--text-muted);
   text-decoration: none;
-  text-decoration-color: black;
 }
 
 a:hover {
-  color: grey;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  color: var(--text-main);
 }
 
 .logo {
   font-size: 2rem;
-  color: var(--white);
+  color: var(--accent);
+  font-weight: bold;
 }
 
 .logo:hover {
@@ -344,16 +332,6 @@ section {
 }
 
 /* ABOUT SECTION */
-
-
-
-
-.nickname{
-    text-align: center;
-    justify-content: space-around;
-    color: var(--raisin-black);
-    margin-top: 1rem;
-}
 
 .about-containers {
   gap: 2rem;
@@ -697,7 +675,7 @@ article .icon {
 
 #projects {
   position: relative;
-  background-color: var(--white);
+  background-color: transparent;
   padding: 3rem;
   border-top-right-radius: 5rem;
   border-bottom-left-radius: 5rem;
