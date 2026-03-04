@@ -1,79 +1,27 @@
 
-  :root {
-    --bg-main: #000000;
-    --bg-card: rgba(255, 255, 255, 0.05);
-    --accent: #0A84FF; /* iOS Blue */
-    --text-main: #f1f1f1;
-    --glass-border: 1px solid rgba(255, 255, 255, 0.1);
 
 
-/*
-    colors
-*/
-
-    --raisin-black: rgb(12, 13, 15);
-    --roman-silver: hsla(229, 10%, 57%, 1);
-    --eerie-black: hsla(228, 9%, 10%, 1);
-    --black: hsla(0, 0%, 0%, 1);
-    --white: hsla(0, 0%, 100%, 1);
-    --white_a10: hsla(0, 40%, 98%, 0.445);
-    --white_a5: hsla(0, 0%, 100%, 0.05);
-
-/*
-    typography
-*/
-
-    --ff-syne: 'Syne', sans-serif;
-
-    --fs-1: 4.8rem;
-    --fs-2: 4.5rem;
-    --fs-3: 4rem;
-    --fs-4: 2.4rem;
-    --fs-5: 2rem;
-    --fs-6: 1.8rem;
-    --fs-7: 1.4rem;
-    --fs-8: 1.2rem;
-
-    --fw-800: 800;
-    --fw-700: 700;
-
-/*
-    spacing
-*/
-
-    --section-padding: 100px;
-
-/*
-    * border radius
-*/
-
-    --radius-pill: 100px;
-    --radius-circle: 50%;
-    --blob-radius: 52% 48% 59% 41% / 53% 40% 60% 47%;
-
-/*
-    * transition
-*/
-
-    --transition-1: 0.25s ease;
-    --transition-2: 0.5s ease;
-    --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
-    --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
-    --cubic-bounce: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    --cubic-ease-out: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
-
-  }
-
-
-
-/* GENERAL */
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
+:root {
+  --bg-main: #f8f9fa;
+  --bg-card: #ffffff;
+  --text-main: #212529;
+  --text-muted: #6c757d;
+  --accent: #ff8c00;
+  --glass-border: 1px solid rgba(0, 0, 0, 0.05);
+  --glass-bg: rgba(255, 255, 255, 0.7);
 }
+
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
 
 body {
   font-family: "Poppins", sans-serif;
@@ -82,17 +30,9 @@ body {
 }
 
 /* Fade-in Animation Classes */
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
 
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-  color: var(--text-main);
-}
+
+
 
 html {
   scroll-behavior: smooth;
@@ -899,4 +839,9 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
 }
