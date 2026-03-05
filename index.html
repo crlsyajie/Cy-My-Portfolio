@@ -270,16 +270,16 @@
 
       <!-- Category Buttons -->
       <div style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 4rem; flex-wrap: wrap;">
-          <button style="background: var(--accent); color: white; border: none; padding: 0.6rem 2rem; border-radius: 4px; font-weight: 600; cursor: pointer; font-size: 0.9rem;">All</button>
-          <button style="background: rgba(255,255,255,0.05); color: var(--text-muted); border: none; padding: 0.6rem 2rem; border-radius: 4px; font-weight: 500; cursor: pointer; font-size: 0.9rem; transition: background 0.3s;">Website Design</button>
-          <button style="background: rgba(255,255,255,0.05); color: var(--text-muted); border: none; padding: 0.6rem 2rem; border-radius: 4px; font-weight: 500; cursor: pointer; font-size: 0.9rem; transition: background 0.3s;">App Mobile Design</button>
-          <button style="background: rgba(255,255,255,0.05); color: var(--text-muted); border: none; padding: 0.6rem 2rem; border-radius: 4px; font-weight: 500; cursor: pointer; font-size: 0.9rem; transition: background 0.3s;">App Desktop</button>
-          <button style="background: rgba(255,255,255,0.05); color: var(--text-muted); border: none; padding: 0.6rem 2rem; border-radius: 4px; font-weight: 500; cursor: pointer; font-size: 0.9rem; transition: background 0.3s;">Branding</button>
+          <button data-category="all" style="background: var(--accent); color: white; border: none; padding: 0.6rem 2rem; border-radius: 4px; font-weight: 600; cursor: pointer; font-size: 0.9rem;">All</button>
+          <button data-category="web-app" style="background: rgba(255,255,255,0.05); color: var(--text-muted); border: none; padding: 0.6rem 2rem; border-radius: 4px; font-weight: 500; cursor: pointer; font-size: 0.9rem; transition: background 0.3s;">Web App</button>
+          <button data-category="ui-ux" style="background: rgba(255,255,255,0.05); color: var(--text-muted); border: none; padding: 0.6rem 2rem; border-radius: 4px; font-weight: 500; cursor: pointer; font-size: 0.9rem; transition: background 0.3s;">UI/UX</button>
+          <button data-category="machine-learning" style="background: rgba(255,255,255,0.05); color: var(--text-muted); border: none; padding: 0.6rem 2rem; border-radius: 4px; font-weight: 500; cursor: pointer; font-size: 0.9rem; transition: background 0.3s;">Machine Learning</button>
+          <button data-category="python" style="background: rgba(255,255,255,0.05); color: var(--text-muted); border: none; padding: 0.6rem 2rem; border-radius: 4px; font-weight: 500; cursor: pointer; font-size: 0.9rem; transition: background 0.3s;">Python</button>
       </div>
 
       <div class="projects-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
 
-          <div class="portfolio-card" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
+          <div class="portfolio-card" data-category="web-app" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
               <a href="https://github.com/crlsyajie/eventms" target="_blank" style="text-decoration: none;">
                   <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px;">
                       <img src="./images/Screenshot 2024-09-08 145027.png" alt="Event Management System" style="width: 100%; height: 100%; object-fit: cover;" />
@@ -291,7 +291,7 @@
               </a>
           </div>
 
-          <div class="portfolio-card" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
+          <div class="portfolio-card" data-category="web-app" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
               <a href="https://github.com/crlsyajie/barakollect" target="_blank" style="text-decoration: none;">
                   <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px;">
                       <img src="./images/Screenshot_2024-09-08_162448.png" alt="Baranggay Information System" style="width: 100%; height: 100%; object-fit: cover;" />
@@ -303,7 +303,7 @@
               </a>
           </div>
 
-          <div class="portfolio-card" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
+          <div class="portfolio-card" data-category="web-app" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
               <a href="https://github.com/crlsyajie/Google" target="_blank" style="text-decoration: none;">
                   <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px; background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
                       <p style="color: var(--text-muted);">Google Projects</p>
@@ -315,7 +315,7 @@
               </a>
           </div>
 
-          <div class="portfolio-card" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
+          <div class="portfolio-card" data-category="ui-ux" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
               <a href="https://github.com/crlsyajie/bsu-niverse" target="_blank" style="text-decoration: none;">
                   <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px; background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
                       <p style="color: var(--text-muted);">BSU Niverse UI</p>
@@ -327,7 +327,7 @@
               </a>
           </div>
 
-          <div class="portfolio-card" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
+          <div class="portfolio-card" data-category="machine-learning" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
               <a href="https://github.com/crlsyajie/CoffeeFarmClassification_CNN" target="_blank" style="text-decoration: none;">
                   <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px; background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
                       <p style="color: var(--text-muted);">CoffeeFarm CNN Model</p>
@@ -339,7 +339,91 @@
               </a>
           </div>
 
-          <div class="portfolio-card" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
+          <div class="portfolio-card" data-category="machine-learning" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
+              <a href="https://github.com/crlsyajie/apex-insight" target="_blank" style="text-decoration: none;">
+                  <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px; background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                      <p style="color: var(--text-muted);">apex-insight</p>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                      <p style="color: var(--text-main); font-size: 1rem; margin: 0; font-weight: 500;">Apex Insight</p>
+                      <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">Machine Learning</p>
+                  </div>
+              </a>
+          </div>
+
+          <div class="portfolio-card" data-category="web-app" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
+              <a href="https://github.com/crlsyajie/Formula-1-2026" target="_blank" style="text-decoration: none;">
+                  <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px; background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                      <p style="color: var(--text-muted);">Formula-1-2026</p>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                      <p style="color: var(--text-main); font-size: 1rem; margin: 0; font-weight: 500;">Formula 1 2026</p>
+                      <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">Web App</p>
+                  </div>
+              </a>
+          </div>
+
+          <div class="portfolio-card" data-category="machine-learning" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
+              <a href="https://github.com/crlsyajie/Hands-On-Large-Language-Models" target="_blank" style="text-decoration: none;">
+                  <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px; background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                      <p style="color: var(--text-muted);">Hands-On LLMs</p>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                      <p style="color: var(--text-main); font-size: 1rem; margin: 0; font-weight: 500;">Hands-On Large Language Models</p>
+                      <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">Machine Learning</p>
+                  </div>
+              </a>
+          </div>
+
+          <div class="portfolio-card" data-category="web-app" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
+              <a href="https://github.com/crlsyajie/Formula-1" target="_blank" style="text-decoration: none;">
+                  <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px; background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                      <p style="color: var(--text-muted);">Formula-1</p>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                      <p style="color: var(--text-main); font-size: 1rem; margin: 0; font-weight: 500;">Formula 1</p>
+                      <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">Web App</p>
+                  </div>
+              </a>
+          </div>
+
+          <div class="portfolio-card" data-category="python" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
+              <a href="https://github.com/crlsyajie/adk-python" target="_blank" style="text-decoration: none;">
+                  <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px; background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                      <p style="color: var(--text-muted);">adk-python</p>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                      <p style="color: var(--text-main); font-size: 1rem; margin: 0; font-weight: 500;">ADK Python</p>
+                      <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">Python</p>
+                  </div>
+              </a>
+          </div>
+
+          <div class="portfolio-card" data-category="web-app" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
+              <a href="https://github.com/crlsyajie/Landing-Page-Razberie" target="_blank" style="text-decoration: none;">
+                  <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px; background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                      <p style="color: var(--text-muted);">Landing-Page-Razberie</p>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                      <p style="color: var(--text-main); font-size: 1rem; margin: 0; font-weight: 500;">Landing Page Razberie</p>
+                      <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">Web App</p>
+                  </div>
+              </a>
+          </div>
+
+          <div class="portfolio-card" data-category="machine-learning" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
+              <a href="https://github.com/crlsyajie/Machine-Learning-Models" target="_blank" style="text-decoration: none;">
+                  <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px; background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                      <p style="color: var(--text-muted);">Machine-Learning-Models</p>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                      <p style="color: var(--text-main); font-size: 1rem; margin: 0; font-weight: 500;">Machine Learning Models</p>
+                      <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">Machine Learning</p>
+                  </div>
+              </a>
+          </div>
+
+          <div class="portfolio-card" data-category="all" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
               <a href="https://github.com/crlsyajie?tab=repositories" target="_blank" style="text-decoration: none;">
                   <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px; background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
                       <p style="color: var(--accent);">View all repositories ➔</p>
@@ -608,14 +692,28 @@
 
       /* ========== 8. FILTER BUTTON ACTIVE STATE ========== */
       const filterBtns = document.querySelectorAll('#projects div[style*="justify-content: center"] > button');
+      const portfolioCards = document.querySelectorAll('.portfolio-card');
+
       filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
+          // Update active styling
           filterBtns.forEach(b => {
             b.style.background = 'rgba(255,255,255,0.05)';
             b.style.color = 'var(--text-muted)';
           });
           btn.style.background = 'var(--accent)';
           btn.style.color = 'white';
+
+          // Filter projects
+          const category = btn.getAttribute('data-category');
+          portfolioCards.forEach(card => {
+            if (category === 'all' || card.getAttribute('data-category') === category || card.getAttribute('data-category') === 'all') {
+              // We use empty string to revert to original display flex (as defined in style and class)
+              card.style.display = '';
+            } else {
+              card.style.display = 'none';
+            }
+          });
         });
       });
 
