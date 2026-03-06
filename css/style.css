@@ -22,6 +22,11 @@
   --transition-fast: 0.2s ease;
   --transition-base: 0.3s ease;
   --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  --color-1: hsl(0 100% 63%);
+  --color-2: hsl(270 100% 63%);
+  --color-3: hsl(210 100% 63%);
+  --color-4: hsl(195 100% 63%);
+  --color-5: hsl(90 100% 63%);
 }
 
 *, *::before, *::after {
@@ -531,6 +536,171 @@ section {
 }
 
 /* ============================================
+   RAINBOW BUTTON
+   ============================================ */
+@keyframes rainbow {
+  0% { background-position: 0%; }
+  100% { background-position: 200%; }
+}
+
+.rainbow-button {
+  position: relative;
+  display: inline-flex;
+  height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  border: 0;
+  background-size: 200%;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  color: var(--text-main);
+  transition: colors var(--transition-base);
+  background-clip: padding-box, border-box, border-box;
+  background-origin: border-box;
+  border: calc(0.08 * 1rem) solid transparent;
+  cursor: pointer;
+  animation: rainbow 2s infinite linear;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+
+  /* Dark mode background */
+  background-image:
+    linear-gradient(#121213, #121213),
+    linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),
+    linear-gradient(90deg, var(--color-1), var(--color-5), var(--color-3), var(--color-4), var(--color-2));
+}
+
+.rainbow-button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+.rainbow-button:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.rainbow-button::before {
+  content: "";
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  z-index: -1;
+  height: 20%;
+  width: 60%;
+  transform: translateX(-50%);
+  animation: rainbow 2s infinite linear;
+  background-image: linear-gradient(90deg, var(--color-1), var(--color-5), var(--color-3), var(--color-4), var(--color-2));
+  background-size: 200%;
+  filter: blur(calc(0.8 * 1rem));
+}
+
+/* ============================================
+   CONTAINER SCROLL ANIMATION
+   ============================================ */
+.scroll-container {
+  height: 60rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .scroll-container {
+    height: 80rem;
+    padding: 5rem;
+  }
+}
+
+.scroll-wrapper {
+  padding: 2.5rem 0;
+  width: 100%;
+  position: relative;
+  perspective: 1000px;
+}
+
+@media (min-width: 768px) {
+  .scroll-wrapper {
+    padding: 10rem 0;
+  }
+}
+
+.scroll-header {
+  max-width: 64rem;
+  margin: 0 auto;
+  text-align: center;
+  transition: transform 0.1s ease-out;
+}
+
+.scroll-title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.scroll-title-span {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-top: 0.25rem;
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .scroll-title-span {
+    font-size: 6rem;
+  }
+}
+
+.scroll-card {
+  max-width: 64rem;
+  margin: -3rem auto 0;
+  height: 30rem;
+  width: 100%;
+  border: 4px solid #6C6C6C;
+  padding: 0.5rem;
+  background-color: #222222;
+  border-radius: 30px;
+  box-shadow:
+    0 0 #0000004d, 0 9px 20px #0000004a, 0 37px 37px #00000042,
+    0 84px 50px #00000026, 0 149px 60px #0000000a, 0 233px 65px #00000003;
+  transition: transform 0.1s ease-out;
+  transform-origin: center top;
+}
+
+@media (min-width: 768px) {
+  .scroll-card {
+    height: 40rem;
+    padding: 1.5rem;
+  }
+}
+
+.scroll-card-inner {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: var(--bg-card);
+}
+
+@media (min-width: 768px) {
+  .scroll-card-inner {
+    padding: 1rem;
+  }
+}
+
+.scroll-card-img {
+  margin: 0 auto;
+  border-radius: 1rem;
+  object-fit: cover;
+  height: 100%;
+  object-position: left top;
+}
+
+/* ============================================
    SERVICES
    ============================================ */
 
@@ -936,6 +1106,99 @@ section {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+}
+
+/* ============================================
+   STACKED CARDS INTERACTION
+   ============================================ */
+.stacked-cards-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.stacked-cards-wrapper {
+  position: relative;
+  width: 350px;
+  height: 400px;
+}
+
+.stacked-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 400px;
+  overflow: hidden;
+  background: var(--bg-card);
+  border-radius: 1rem; /* 2xl = 1rem */
+  box-shadow: 0 0 10px rgba(0,0,0,0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), z-index 0.3s;
+  transform-origin: center center;
+}
+
+.stacked-card-first {
+  z-index: 10;
+  cursor: pointer;
+}
+
+.stacked-card-second {
+  z-index: 0;
+}
+
+.stacked-card-third {
+  z-index: 0;
+}
+
+/* Hover effects added via JS, but we define classes for them */
+.stacked-wrapper-hover .stacked-card-second {
+  transform: translateX(-40px) rotate(-5deg);
+}
+
+.stacked-wrapper-hover .stacked-card-third {
+  transform: translateX(40px) rotate(5deg);
+}
+
+.stacked-card-image-wrapper {
+  position: relative;
+  height: 18rem; /* h-72 */
+  border-radius: 0.75rem; /* rounded-xl */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+  overflow: hidden;
+  width: calc(100% - 1rem);
+  margin: 0.5rem auto 0;
+}
+
+.stacked-card-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.stacked-card-content {
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--text-main);
+  text-align: left;
+}
+
+.stacked-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.stacked-card-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin: 0;
 }
 
 /* ============================================
