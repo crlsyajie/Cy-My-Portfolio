@@ -196,10 +196,57 @@
         });
       });
 
-      /* ========== 8. FILTER BUTTON ACTIVE STATE ========== */
-      const filterBtns = document.querySelectorAll('#projects div[style*="justify-content: center"] > button');
-      const portfolioCards = document.querySelectorAll('.portfolio-card');
+      /* ========== 8. FILTER BUTTON ACTIVE STATE AND CARD STACK LOGIC ========== */
+      const filterBtns = document.querySelectorAll('#category-filters > button');
+      const interactiveCardsContainer = document.getElementById('interactive-cards-container');
+      const portfolioCards = Array.from(document.querySelectorAll('.portfolio-card'));
 
+      let isSpread = false;
+      let visibleCards = [...portfolioCards];
+
+      function updateCardStack() {
+          if (isSpread) {
+              interactiveCardsContainer.classList.add('is-spread');
+              visibleCards.forEach(card => {
+                  card.removeAttribute('data-index');
+              });
+          } else {
+              interactiveCardsContainer.classList.remove('is-spread');
+              visibleCards.forEach((card, index) => {
+                  card.setAttribute('data-index', index);
+              });
+          }
+      }
+
+      // Initialize stack
+      updateCardStack();
+
+      // Click to spread/unspread
+      interactiveCardsContainer.addEventListener('click', (e) => {
+          // Don't trigger if they clicked a link directly
+          if (e.target.closest('a') && isSpread) {
+              return;
+          }
+
+          if (!isSpread) {
+              e.preventDefault(); // Prevent navigating if clicking top card while stacked
+              isSpread = true;
+              updateCardStack();
+          } else {
+              // Optional: click background to unspread, but clicking cards navigates.
+              // We handle this by doing nothing extra here; links work natively when spread.
+          }
+      });
+
+      // Optional: Add a button or click outside logic to unspread
+      document.addEventListener('click', (e) => {
+          if (isSpread && !interactiveCardsContainer.contains(e.target) && !e.target.closest('#category-filters')) {
+              isSpread = false;
+              updateCardStack();
+          }
+      });
+
+      // Filter Logic
       filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
           // Update active styling
@@ -212,14 +259,21 @@
 
           // Filter projects
           const category = btn.getAttribute('data-category');
+
           portfolioCards.forEach(card => {
             if (category === 'all' || card.getAttribute('data-category') === category || card.getAttribute('data-category') === 'all') {
-              // We use empty string to revert to original display flex (as defined in style and class)
-              card.style.display = '';
+              card.classList.remove('hidden');
             } else {
-              card.style.display = 'none';
+              card.classList.add('hidden');
             }
           });
+
+          // Re-evaluate visible cards and reset stack index
+          visibleCards = portfolioCards.filter(card => !card.classList.contains('hidden'));
+
+          // Reset to stacked view on filter change for clean UX
+          isSpread = false;
+          updateCardStack();
         });
       });
 
