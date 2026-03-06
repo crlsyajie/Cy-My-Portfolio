@@ -58,49 +58,51 @@
 
 
 
-    <section id="profile" style="display: flex; align-items: center; justify-content: space-between; min-height: 85vh; padding-top: 5rem;">
-      <div style="flex: 1; text-align: left; z-index: 1;">
-          <p style="font-size: 1rem; color: var(--text-muted); margin-bottom: 0.5rem; line-height: 1.6;">
-              Hi, I am<br/>
-              <span style="font-size: 1.5rem; color: var(--text-main); font-weight: 500;">Carlos Yajie Fetizanan</span>
-          </p>
-          <h1 style="font-size: 3.2rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--accent);">
-              <span id="typed-text"></span><span id="cursor" style="animation: blink 0.7s infinite;">|</span>
-          </h1>
-          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem; max-width: 520px; line-height: 1.6;">
-              Intern @ Center for Artificial Intelligence and Smart Technologies, Batangas State University | IT Major in Business Analytics
-          </p>
-          <div id="socials-container" style="display: flex; justify-content: flex-start; margin-bottom: 2rem; gap: 1rem;">
-              <a href="#" style="width: 32px; height: 32px; border-radius: 50%; background: var(--bg-card); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.1);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
-              <a href="#" style="width: 32px; height: 32px; border-radius: 50%; background: var(--bg-card); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.1);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
-              <a href="#" style="width: 32px; height: 32px; border-radius: 50%; background: var(--bg-card); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.1);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
-              <a href="#" style="width: 32px; height: 32px; border-radius: 50%; background: var(--bg-card); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.1);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
-          </div>
-          <div style="display: flex; gap: 1rem; margin-bottom: 2.5rem;">
-              <a href="#contact" class="rainbow-button" style="text-decoration: none;">Hire Me</a>
-              <a href="./assets/resumeee.pdf" target="_blank" class="btn" style="padding: 0.6rem 2rem; background: transparent; color: var(--text-main); border: 1px solid rgba(255,255,255,0.2); border-radius: 4px; text-decoration: none; font-weight: 500;">Download CV</a>
-          </div>
+    <section id="profile" style="position: relative; display: grid; grid-template-columns: 1fr; align-items: center; min-height: 100vh; padding-top: 5rem; overflow: hidden; padding-bottom: 2rem;">
+      <div class="hero-layout" style="display: grid; grid-template-columns: 1fr 1fr 1fr; width: 100%; align-items: center; z-index: 10;">
 
-          <div style="display: flex; gap: 2rem; background: rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05); width: max-content;">
-              <div style="text-align: left; padding-right: 2rem; border-right: 1px solid rgba(255,255,255,0.1);">
-                  <h3 style="color: var(--accent); font-size: 1.2rem; margin: 0;">5+</h3>
-                  <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">Experiences</p>
-              </div>
-              <div style="text-align: left; padding-right: 2rem; border-right: 1px solid rgba(255,255,255,0.1);">
-                  <h3 style="color: var(--accent); font-size: 1.2rem; margin: 0;">20+</h3>
-                  <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">Project done</p>
-              </div>
-              <div style="text-align: left;">
-                  <h3 style="color: var(--accent); font-size: 1.2rem; margin: 0;">80+</h3>
-                  <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">Happy Clients</p>
-              </div>
-          </div>
+        <!-- Left Text Content -->
+        <div style="order: 1; text-align: left; z-index: 20; padding-right: 2rem;" class="hero-left-col">
+            <p style="font-size: 1rem; color: var(--text-muted); margin-bottom: 0.5rem; line-height: 1.6;">
+                Hi, I am <span style="font-size: 1.2rem; color: var(--text-main); font-weight: 500;">Carlos Yajie Fetizanan</span>
+            </p>
+            <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--accent);">
+                <span id="typed-text"></span><span id="cursor" style="animation: blink 0.7s infinite;">|</span>
+            </h2>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem; max-width: 320px; line-height: 1.6;">
+                Intern @ Center for Artificial Intelligence and Smart Technologies, Batangas State University | IT Major in Business Analytics
+            </p>
+            <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+                <a href="#contact" class="rainbow-button" style="text-decoration: none; padding: 0.4rem 1.5rem; font-size: 0.9rem;">Hire Me</a>
+                <a href="./assets/resumeee.pdf" target="_blank" class="btn" style="padding: 0.4rem 1.5rem; background: transparent; color: var(--text-main); border: 1px solid rgba(255,255,255,0.2); border-radius: 4px; text-decoration: none; font-weight: 500; font-size: 0.9rem;">Download CV</a>
+            </div>
+        </div>
+
+        <!-- Center Image with Circle -->
+        <div style="order: 2; position: relative; display: flex; justify-content: center; align-items: center; height: 100%; z-index: 10;">
+            <div style="position: absolute; z-index: 0; height: 300px; width: 300px; border-radius: 50%; background: var(--accent); opacity: 0.9;" class="hero-center-circle"></div>
+            <img src="./assets/crls.png" alt="Profile Picture" style="position: relative; z-index: 10; height: auto; width: 250px; object-fit: cover; transform: scale(1.3);" class="hero-center-image" />
+        </div>
+
+        <!-- Right Text (Overlay Effect) -->
+        <div style="order: 3; display: flex; align-items: center; justify-content: flex-start; z-index: 20;" class="hero-right-col">
+            <h1 style="font-size: 5rem; font-weight: 900; color: var(--text-main); line-height: 1; letter-spacing: -2px; text-transform: lowercase;">
+                less is<br />
+                more.
+            </h1>
+        </div>
+
       </div>
 
-      <div style="flex: 1; display: flex; justify-content: flex-end; align-items: center; position: relative;">
-          <!-- Using profile picture as alternative in hero picture -->
-          <div style="width: 500px; height: 500px; border-radius: 50%; overflow: hidden; background: #1a1a1a;">
-              <img src="./assets/crls.png" alt="Profile Picture" style="width: 100%; height: 100%; object-fit: cover; object-position: top;" />
+      <!-- Bottom Status/Socials -->
+      <div style="position: absolute; bottom: 2rem; left: 0; right: 0; display: flex; justify-content: space-between; align-items: center; width: 100%; z-index: 30;" class="hero-bottom-bar">
+          <div id="socials-container" style="display: flex; gap: 1rem;">
+              <a href="https://www.linkedin.com/in/carlos-yajie-fetizanan" target="_blank" style="width: 32px; height: 32px; border-radius: 50%; background: var(--bg-card); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.1);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+              <a href="https://github.com/crlsyajie" target="_blank" style="width: 32px; height: 32px; border-radius: 50%; background: var(--bg-card); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.1);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+              <a href="#" style="width: 32px; height: 32px; border-radius: 50%; background: var(--bg-card); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.1);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+          </div>
+          <div style="text-align: right; color: var(--text-muted); font-size: 0.85rem;">
+              Batangas, PH
           </div>
       </div>
     </section>
@@ -331,7 +333,7 @@
       </div>
 
       <!-- Category Buttons -->
-      <div style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 4rem; flex-wrap: wrap;">
+      <div style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 4rem; flex-wrap: wrap;" id="category-filters">
           <button data-category="all" style="background: var(--accent); color: white; border: none; padding: 0.6rem 2rem; border-radius: 4px; font-weight: 600; cursor: pointer; font-size: 0.9rem;">All</button>
           <button data-category="web-app" style="background: rgba(255,255,255,0.05); color: var(--text-muted); border: none; padding: 0.6rem 2rem; border-radius: 4px; font-weight: 500; cursor: pointer; font-size: 0.9rem; transition: background 0.3s;">Web App</button>
           <button data-category="ui-ux" style="background: rgba(255,255,255,0.05); color: var(--text-muted); border: none; padding: 0.6rem 2rem; border-radius: 4px; font-weight: 500; cursor: pointer; font-size: 0.9rem; transition: background 0.3s;">UI/UX</button>
@@ -339,160 +341,161 @@
           <button data-category="python" style="background: rgba(255,255,255,0.05); color: var(--text-muted); border: none; padding: 0.6rem 2rem; border-radius: 4px; font-weight: 500; cursor: pointer; font-size: 0.9rem; transition: background 0.3s;">Python</button>
       </div>
 
-      <div class="projects-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+      <div class="interactive-cards-container" id="interactive-cards-container">
+          <!-- Spreadable/swappable cards will be initialized via JS based on the templates below -->
 
-          <div class="portfolio-card" data-category="web-app" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
-              <a href="https://github.com/crlsyajie/eventms" target="_blank" style="text-decoration: none;">
-                  <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px;">
-                      <img src="./assets/Screenshot 2024-09-08 145027.png" alt="Event Management System" style="width: 100%; height: 100%; object-fit: cover;" />
+          <div class="portfolio-card" data-category="web-app">
+              <a href="https://github.com/crlsyajie/eventms" target="_blank">
+                  <div class="card-image-wrap">
+                      <img src="./assets/Screenshot 2024-09-08 145027.png" alt="Event Management System" />
                   </div>
-                  <div style="display: flex; justify-content: space-between; align-items: center;">
-                      <p style="color: var(--text-main); font-size: 1rem; margin: 0; font-weight: 500;">Event Management System</p>
-                      <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">Web App</p>
+                  <div class="card-info">
+                      <p class="card-title">Event Management System</p>
+                      <p class="card-category">Web App</p>
                   </div>
               </a>
           </div>
 
-          <div class="portfolio-card" data-category="web-app" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
-              <a href="https://github.com/crlsyajie/barakollect" target="_blank" style="text-decoration: none;">
-                  <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px;">
-                      <img src="./assets/Screenshot_2024-09-08_162448.png" alt="Baranggay Information System" style="width: 100%; height: 100%; object-fit: cover;" />
+          <div class="portfolio-card" data-category="web-app">
+              <a href="https://github.com/crlsyajie/barakollect" target="_blank">
+                  <div class="card-image-wrap">
+                      <img src="./assets/Screenshot_2024-09-08_162448.png" alt="Baranggay Information System" />
                   </div>
-                  <div style="display: flex; justify-content: space-between; align-items: center;">
-                      <p style="color: var(--text-main); font-size: 1rem; margin: 0; font-weight: 500;">Baranggay Collection</p>
-                      <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">Web App</p>
-                  </div>
-              </a>
-          </div>
-
-          <div class="portfolio-card" data-category="web-app" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
-              <a href="https://github.com/crlsyajie/Google" target="_blank" style="text-decoration: none;">
-                  <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px; background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
-                      <p style="color: var(--text-muted);">Google Projects</p>
-                  </div>
-                  <div style="display: flex; justify-content: space-between; align-items: center;">
-                      <p style="color: var(--text-main); font-size: 1rem; margin: 0; font-weight: 500;">Google Web Services</p>
-                      <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">Web App</p>
+                  <div class="card-info">
+                      <p class="card-title">Baranggay Collection</p>
+                      <p class="card-category">Web App</p>
                   </div>
               </a>
           </div>
 
-          <div class="portfolio-card" data-category="ui-ux" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
-              <a href="https://github.com/crlsyajie/bsu-niverse" target="_blank" style="text-decoration: none;">
-                  <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px; background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
-                      <p style="color: var(--text-muted);">BSU Niverse UI</p>
+          <div class="portfolio-card" data-category="web-app">
+              <a href="https://github.com/crlsyajie/Google" target="_blank">
+                  <div class="card-image-wrap placeholder-wrap">
+                      <p>Google Projects</p>
                   </div>
-                  <div style="display: flex; justify-content: space-between; align-items: center;">
-                      <p style="color: var(--text-main); font-size: 1rem; margin: 0; font-weight: 500;">BSU Niverse UI</p>
-                      <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">UI/UX</p>
-                  </div>
-              </a>
-          </div>
-
-          <div class="portfolio-card" data-category="machine-learning" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
-              <a href="https://github.com/crlsyajie/CoffeeFarmClassification_CNN" target="_blank" style="text-decoration: none;">
-                  <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px; background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
-                      <p style="color: var(--text-muted);">CoffeeFarm CNN Model</p>
-                  </div>
-                  <div style="display: flex; justify-content: space-between; align-items: center;">
-                      <p style="color: var(--text-main); font-size: 1rem; margin: 0; font-weight: 500;">Coffee Farm Classification</p>
-                      <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">Machine Learning</p>
+                  <div class="card-info">
+                      <p class="card-title">Google Web Services</p>
+                      <p class="card-category">Web App</p>
                   </div>
               </a>
           </div>
 
-          <div class="portfolio-card" data-category="machine-learning" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
-              <a href="https://github.com/crlsyajie/apex-insight" target="_blank" style="text-decoration: none;">
-                  <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px; background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
-                      <p style="color: var(--text-muted);">apex-insight</p>
+          <div class="portfolio-card" data-category="ui-ux">
+              <a href="https://github.com/crlsyajie/bsu-niverse" target="_blank">
+                  <div class="card-image-wrap placeholder-wrap">
+                      <p>BSU Niverse UI</p>
                   </div>
-                  <div style="display: flex; justify-content: space-between; align-items: center;">
-                      <p style="color: var(--text-main); font-size: 1rem; margin: 0; font-weight: 500;">Apex Insight</p>
-                      <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">Machine Learning</p>
-                  </div>
-              </a>
-          </div>
-
-          <div class="portfolio-card" data-category="web-app" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
-              <a href="https://github.com/crlsyajie/Formula-1-2026" target="_blank" style="text-decoration: none;">
-                  <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px; background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
-                      <p style="color: var(--text-muted);">Formula-1-2026</p>
-                  </div>
-                  <div style="display: flex; justify-content: space-between; align-items: center;">
-                      <p style="color: var(--text-main); font-size: 1rem; margin: 0; font-weight: 500;">Formula 1 2026</p>
-                      <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">Web App</p>
+                  <div class="card-info">
+                      <p class="card-title">BSU Niverse UI</p>
+                      <p class="card-category">UI/UX</p>
                   </div>
               </a>
           </div>
 
-          <div class="portfolio-card" data-category="machine-learning" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
-              <a href="https://github.com/crlsyajie/Hands-On-Large-Language-Models" target="_blank" style="text-decoration: none;">
-                  <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px; background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
-                      <p style="color: var(--text-muted);">Hands-On LLMs</p>
+          <div class="portfolio-card" data-category="machine-learning">
+              <a href="https://github.com/crlsyajie/CoffeeFarmClassification_CNN" target="_blank">
+                  <div class="card-image-wrap placeholder-wrap">
+                      <p>CoffeeFarm CNN Model</p>
                   </div>
-                  <div style="display: flex; justify-content: space-between; align-items: center;">
-                      <p style="color: var(--text-main); font-size: 1rem; margin: 0; font-weight: 500;">Hands-On Large Language Models</p>
-                      <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">Machine Learning</p>
-                  </div>
-              </a>
-          </div>
-
-          <div class="portfolio-card" data-category="web-app" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
-              <a href="https://github.com/crlsyajie/Formula-1" target="_blank" style="text-decoration: none;">
-                  <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px; background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
-                      <p style="color: var(--text-muted);">Formula-1</p>
-                  </div>
-                  <div style="display: flex; justify-content: space-between; align-items: center;">
-                      <p style="color: var(--text-main); font-size: 1rem; margin: 0; font-weight: 500;">Formula 1</p>
-                      <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">Web App</p>
+                  <div class="card-info">
+                      <p class="card-title">Coffee Farm Classification</p>
+                      <p class="card-category">Machine Learning</p>
                   </div>
               </a>
           </div>
 
-          <div class="portfolio-card" data-category="python" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
-              <a href="https://github.com/crlsyajie/adk-python" target="_blank" style="text-decoration: none;">
-                  <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px; background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
-                      <p style="color: var(--text-muted);">adk-python</p>
+          <div class="portfolio-card" data-category="machine-learning">
+              <a href="https://github.com/crlsyajie/apex-insight" target="_blank">
+                  <div class="card-image-wrap placeholder-wrap">
+                      <p>apex-insight</p>
                   </div>
-                  <div style="display: flex; justify-content: space-between; align-items: center;">
-                      <p style="color: var(--text-main); font-size: 1rem; margin: 0; font-weight: 500;">ADK Python</p>
-                      <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">Python</p>
-                  </div>
-              </a>
-          </div>
-
-          <div class="portfolio-card" data-category="web-app" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
-              <a href="https://github.com/crlsyajie/Landing-Page-Razberie" target="_blank" style="text-decoration: none;">
-                  <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px; background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
-                      <p style="color: var(--text-muted);">Landing-Page-Razberie</p>
-                  </div>
-                  <div style="display: flex; justify-content: space-between; align-items: center;">
-                      <p style="color: var(--text-main); font-size: 1rem; margin: 0; font-weight: 500;">Landing Page Razberie</p>
-                      <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">Web App</p>
+                  <div class="card-info">
+                      <p class="card-title">Apex Insight</p>
+                      <p class="card-category">Machine Learning</p>
                   </div>
               </a>
           </div>
 
-          <div class="portfolio-card" data-category="machine-learning" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
-              <a href="https://github.com/crlsyajie/Machine-Learning-Models" target="_blank" style="text-decoration: none;">
-                  <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px; background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
-                      <p style="color: var(--text-muted);">Machine-Learning-Models</p>
+          <div class="portfolio-card" data-category="web-app">
+              <a href="https://github.com/crlsyajie/Formula-1-2026" target="_blank">
+                  <div class="card-image-wrap placeholder-wrap">
+                      <p>Formula-1-2026</p>
                   </div>
-                  <div style="display: flex; justify-content: space-between; align-items: center;">
-                      <p style="color: var(--text-main); font-size: 1rem; margin: 0; font-weight: 500;">Machine Learning Models</p>
-                      <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">Machine Learning</p>
+                  <div class="card-info">
+                      <p class="card-title">Formula 1 2026</p>
+                      <p class="card-category">Web App</p>
                   </div>
               </a>
           </div>
 
-          <div class="portfolio-card" data-category="all" style="display: flex; flex-direction: column; text-align: left; background: transparent; border: none; box-shadow: none;">
-              <a href="https://github.com/crlsyajie?tab=repositories" target="_blank" style="text-decoration: none;">
-                  <div style="height: 250px; overflow: hidden; margin-bottom: 1rem; border-radius: 8px; background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+          <div class="portfolio-card" data-category="machine-learning">
+              <a href="https://github.com/crlsyajie/Hands-On-Large-Language-Models" target="_blank">
+                  <div class="card-image-wrap placeholder-wrap">
+                      <p>Hands-On LLMs</p>
+                  </div>
+                  <div class="card-info">
+                      <p class="card-title">Hands-On Large Language Models</p>
+                      <p class="card-category">Machine Learning</p>
+                  </div>
+              </a>
+          </div>
+
+          <div class="portfolio-card" data-category="web-app">
+              <a href="https://github.com/crlsyajie/Formula-1" target="_blank">
+                  <div class="card-image-wrap placeholder-wrap">
+                      <p>Formula-1</p>
+                  </div>
+                  <div class="card-info">
+                      <p class="card-title">Formula 1</p>
+                      <p class="card-category">Web App</p>
+                  </div>
+              </a>
+          </div>
+
+          <div class="portfolio-card" data-category="python">
+              <a href="https://github.com/crlsyajie/adk-python" target="_blank">
+                  <div class="card-image-wrap placeholder-wrap">
+                      <p>adk-python</p>
+                  </div>
+                  <div class="card-info">
+                      <p class="card-title">ADK Python</p>
+                      <p class="card-category">Python</p>
+                  </div>
+              </a>
+          </div>
+
+          <div class="portfolio-card" data-category="web-app">
+              <a href="https://github.com/crlsyajie/Landing-Page-Razberie" target="_blank">
+                  <div class="card-image-wrap placeholder-wrap">
+                      <p>Landing-Page-Razberie</p>
+                  </div>
+                  <div class="card-info">
+                      <p class="card-title">Landing Page Razberie</p>
+                      <p class="card-category">Web App</p>
+                  </div>
+              </a>
+          </div>
+
+          <div class="portfolio-card" data-category="machine-learning">
+              <a href="https://github.com/crlsyajie/Machine-Learning-Models" target="_blank">
+                  <div class="card-image-wrap placeholder-wrap">
+                      <p>Machine-Learning-Models</p>
+                  </div>
+                  <div class="card-info">
+                      <p class="card-title">Machine Learning Models</p>
+                      <p class="card-category">Machine Learning</p>
+                  </div>
+              </a>
+          </div>
+
+          <div class="portfolio-card view-all-link" data-category="all">
+              <a href="https://github.com/crlsyajie?tab=repositories" target="_blank">
+                  <div class="card-image-wrap placeholder-wrap">
                       <p style="color: var(--accent);">View all repositories ➔</p>
                   </div>
-                  <div style="display: flex; justify-content: space-between; align-items: center;">
-                      <p style="color: var(--text-main); font-size: 1rem; margin: 0; font-weight: 500;">More Projects</p>
-                      <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">GitHub</p>
+                  <div class="card-info">
+                      <p class="card-title">More Projects</p>
+                      <p class="card-category">GitHub</p>
                   </div>
               </a>
           </div>
