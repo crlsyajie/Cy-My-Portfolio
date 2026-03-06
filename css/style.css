@@ -688,7 +688,6 @@ section {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   position: relative;
-  overflow: hidden;
 }
 
 .service-card::before {
@@ -931,7 +930,6 @@ section {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
   cursor: pointer;
-  overflow: hidden;
   transform-origin: center center;
   display: flex;
   flex-direction: column;
@@ -1011,7 +1009,6 @@ section {
 
 .card-image-wrap {
   height: 200px;
-  overflow: hidden;
   background: #1a1a1a;
   position: relative;
 }
