@@ -1,0 +1,36 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "A personal portfolio website showcasing projects, skills, and professional experience. The design emphasizes a sleek, elegant aesthetic using glassmorphism effects, featuring a dark theme (`#121212` background) with orange accents (`#ff8c00`).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crlsyajie/Cy-My-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/crlsyajie/Cy-My-Portfolio/issues"
+  },
+  "homepage": "https://github.com/crlsyajie/Cy-My-Portfolio#readme",
+  "dependencies": {
+    "@types/node": "^25.3.5",
+    "@types/react": "^19.2.14",
+    "autoprefixer": "^10.4.27",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.577.0",
+    "motion": "^12.35.0",
+    "next": "^16.1.6",
+    "postcss": "^8.5.8",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tailwind-merge": "^3.5.0",
+    "tailwindcss": "^4.2.1",
+    "typescript": "^5.9.3"
+  }
+}
