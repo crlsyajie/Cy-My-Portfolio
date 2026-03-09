@@ -9,6 +9,8 @@ This portfolio highlights my work as an IT major in Business Analytics, UI/UX De
 - **CSS3** for styling, animations, media queries, and root variables
 - **Vanilla JavaScript** for interactive elements like the typing effect, scroll reveal animations, and magnetic buttons
 
+The project also contains a hybrid structure: while the main application is vanilla HTML/CSS/JS, it also includes a `package.json`, `tsconfig.json`, and a `components/ui` directory to support modern React, TypeScript, Tailwind CSS, and shadcn/ui components for future integration. See [SETUP_INSTRUCTIONS.md](SETUP_INSTRUCTIONS.md) for more details.
+
 ## Features
 
 - **Responsive Design**: Smooth adaptation across desktop, tablet, and mobile devices using flexbox and media queries.
