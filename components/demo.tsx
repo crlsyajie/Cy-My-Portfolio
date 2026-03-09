@@ -12,7 +12,7 @@ export function GlowingEffectDemo() {
         icon={<Box className="h-4 w-4" />}
         title="Do things the right way"
         description="Running out of copy so I'll write anything."
-        image="/portfolio_all_1.png"
+        image="/assets/portfolio_all_1.png"
       />
       <GridItem
         area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
