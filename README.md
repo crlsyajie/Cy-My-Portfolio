@@ -32,3 +32,31 @@ python3 -m http.server 8000
 ```
 
 Then, open your browser and navigate to `http://localhost:8000`.
+
+## AI Chatbot (Next.js Migration)
+
+A local AI chatbot has been implemented for the future Next.js migration. It uses **Transformers.js** to run models directly in the browser, ensuring privacy and no token costs.
+
+### Integration
+
+To use the chatbot in your Next.js project:
+
+1. Ensure dependencies are installed: `npm install @xenova/transformers lucide-react motion`
+2. Import and add the `<ChatBot />` component to your main layout or page:
+
+```tsx
+import { ChatBot } from './components/chatbot/ChatBot';
+
+export default function RootLayout({ children }) {
+  return (
+    <html>
+      <body>
+        {children}
+        <ChatBot />
+      </body>
+    </html>
+  );
+}
+```
+
+The chatbot will automatically load the knowledge base from `lib/chatbot/knowledge-base.json` and provide answers about your portfolio.
