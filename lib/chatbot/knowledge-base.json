@@ -1,0 +1,81 @@
+{
+  "info": {
+    "name": "Carlos Yajie Fetizanan",
+    "nickname": "Yajie",
+    "location": "Batangas, PH",
+    "email": "cyfetizanan@gmail.com",
+    "phone": "+63 929 307 085",
+    "roles": [
+      "ML Developer",
+      "Front End Developer",
+      "UI/UX Designer",
+      "Visual Artist",
+      "Data Scientist"
+    ],
+    "bio": "Intern at the Center for Artificial Intelligence and Smart Technologies at Batangas State University, majoring in IT with a focus on Business Analytics. Driven by a passion for unveiling hidden insights within expansive datasets and crafting exceptional digital experiences.",
+    "socials": {
+      "instagram": "https://www.instagram.com/crls_brook?igsh=MTE5bjJiaTM0Zmdzdw%3D%3D&utm_source=qr",
+      "facebook": "https://www.facebook.com/share/18nwGKjCYv/?mibextid=wwXIfr",
+      "linkedin": "https://www.linkedin.com/in/carlos-yajie-fetizanan",
+      "github": "https://github.com/crlsyajie"
+    }
+  },
+  "knowledge_base": [
+    {
+      "category": "About",
+      "content": "Carlos Yajie Fetizanan is an IT Major in Business Analytics and an Intern at the Center for Artificial Intelligence and Smart Technologies at Batangas State University."
+    },
+    {
+      "category": "Education",
+      "content": "Carlos is currently a BSIT Undergraduate at Batangas State University Lipa."
+    },
+    {
+      "category": "Certifications",
+      "content": "Carlos holds several professional certifications: Google UX Design Professional Certificate, AWS Cloud Quest: Cloud Practitioner, Google Cybersecurity Professional Certificate, and Google AI Essentials. He also has AI & Python Certificates from DataCamp."
+    },
+    {
+      "category": "Skills",
+      "content": "Carlos has high proficiency in creative tools: Figma (100%), Adobe XD (90%), Adobe Photoshop (85%), Adobe Premiere (70%), and Adobe Illustrator (60%)."
+    },
+    {
+      "category": "Services",
+      "content": "Carlos offers a wide range of services including UI/UX Design (crafting intuitive interfaces), Video Editing (engaging visual stories), Graphic Design (brand identity), Web Development (responsive sites), Data Science, and Machine Learning."
+    },
+    {
+      "category": "Projects",
+      "content": "Notable projects include: Event Management System, Baranggay Collection system, Coffee Farm Classification using CNN models, and Apex Insight."
+    },
+    {
+      "category": "Projects",
+      "content": "Carlos has expertise in Machine Learning, having worked on 'Hands-On Large Language Models' and various other models hosted on his GitHub."
+    },
+    {
+      "category": "Projects",
+      "content": "Web development projects include: Formula 1 2026, Formula 1, and Landing Page Razberie."
+    },
+    {
+      "category": "Contact",
+      "content": "You can reach Carlos via email at cyfetizanan@gmail.com or by phone at +63 929 307 085."
+    },
+    {
+      "category": "Social Media",
+      "content": "Instagram: https://www.instagram.com/crls_brook?igsh=MTE5bjJiaTM0Zmdzdw%3D%3D&utm_source=qr"
+    },
+    {
+      "category": "Social Media",
+      "content": "Facebook: https://www.facebook.com/share/18nwGKjCYv/?mibextid=wwXIfr"
+    },
+    {
+      "category": "Social Media",
+      "content": "LinkedIn: https://www.linkedin.com/in/carlos-yajie-fetizanan"
+    },
+    {
+      "category": "Social Media",
+      "content": "GitHub: https://github.com/crlsyajie"
+    },
+    {
+      "category": "Summary",
+      "content": "Carlos is a multi-talented tech professional combining Machine Learning, Web Development, and UI/UX Design to solve complex problems and create beautiful digital experiences."
+    }
+  ]
+}
