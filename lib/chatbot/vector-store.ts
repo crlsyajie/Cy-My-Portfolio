@@ -1,5 +1,5 @@
 import { pipeline, FeatureExtractionPipeline } from '@xenova/transformers';
-import knowledgeBase from './knowledge-base.json' with { type: 'json' };
+import knowledgeBase from './knowledge-base.json';
 
 export interface KnowledgeItem {
   category: string;
@@ -9,7 +9,7 @@ export interface KnowledgeItem {
 
 class VectorStore {
   private extractor: FeatureExtractionPipeline | null = null;
-  private items: KnowledgeItem[] = knowledgeBase.knowledge_base;
+  private items: KnowledgeItem[] = (knowledgeBase as any).knowledge_base || [];
 
   async init() {
     if (!this.extractor) {
