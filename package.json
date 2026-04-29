@@ -4,6 +4,9 @@
   "description": "A personal portfolio website showcasing projects, skills, and professional experience. The design emphasizes a sleek, elegant aesthetic using glassmorphism effects, featuring a dark theme (`#121212` background) with orange accents (`#ff8c00`).",
   "main": "index.js",
   "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,10 +29,10 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.577.0",
     "motion": "^12.35.0",
-    "next": "^16.1.6",
+    "next": "^16.2.4",
     "postcss": "^8.5.8",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
     "tailwind-merge": "^3.5.0",
     "tailwindcss": "^4.2.1",
     "typescript": "^5.9.3"
