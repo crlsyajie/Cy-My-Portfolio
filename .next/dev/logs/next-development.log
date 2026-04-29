@@ -1,0 +1,6 @@
+[00:27:33.825] Server  ERROR   Error: ENOENT: no such file or directory, scandir '/app/app'
+[00:27:33.836] Server  ERROR   ⨯ "unhandledRejection:" Error: ENOENT: no such file or directory, scandir '/app/app'
+[00:27:33.838] Server  ERROR   ⨯ "unhandledRejection: " Error: ENOENT: no such file or directory, scandir '/app/app'
+[00:15:11.063] Server  ERROR   Error: ENOENT: no such file or directory, scandir '/app/app'
+[00:15:11.083] Server  ERROR   ⨯ "unhandledRejection:" Error: ENOENT: no such file or directory, scandir '/app/app'
+[00:15:11.088] Server  ERROR   ⨯ "unhandledRejection: " Error: ENOENT: no such file or directory, scandir '/app/app'

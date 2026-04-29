@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { useChatbot } from '../../hooks/use-chatbot.js';
-import type { Message } from '../../hooks/use-chatbot.js';
-import { ChatMessage } from './ChatMessage.js';
+import { useChatbot } from '../../hooks/use-chatbot';
+import type { Message } from '../../hooks/use-chatbot';
+import { ChatMessage } from './ChatMessage';
 import { Send, Loader2, Instagram, Facebook } from 'lucide-react';
 
 export const ChatInterface: React.FC = () => {
