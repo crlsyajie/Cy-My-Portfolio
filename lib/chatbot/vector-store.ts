@@ -1,6 +1,3 @@
-import { pipeline, FeatureExtractionPipeline } from '@xenova/transformers';
-import knowledgeBase from './knowledge-base.json';
-
 export interface KnowledgeItem {
   category: string;
   content: string;
@@ -8,11 +5,23 @@ export interface KnowledgeItem {
 }
 
 class VectorStore {
-  private extractor: FeatureExtractionPipeline | null = null;
-  private items: KnowledgeItem[] = (knowledgeBase as any).knowledge_base || [];
+  private extractor: any = null;
+  private items: KnowledgeItem[] = [];
 
   async init() {
+    if (typeof window === 'undefined') return;
+
+    if (this.items.length === 0) {
+      try {
+        const response = await fetch('/assets/knowledge-base.json');
+        const knowledgeBase = await response.json();
+        this.items = knowledgeBase?.knowledge_base || [];
+      } catch (error) {
+        console.error('Failed to load knowledge base:', error);
+      }
+    }
     if (!this.extractor) {
+      const { pipeline } = await import('@xenova/transformers');
       this.extractor = await pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2');
 
       // Pre-calculate embeddings for the knowledge base

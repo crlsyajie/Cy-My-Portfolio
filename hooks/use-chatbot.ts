@@ -1,8 +1,6 @@
 import { useState, useCallback } from 'react';
 import { vectorStore } from '../lib/chatbot/vector-store';
 import type { KnowledgeItem } from '../lib/chatbot/vector-store';
-import { pipeline, Text2TextGenerationPipeline } from '@xenova/transformers';
-
 export interface Message {
   role: 'user' | 'bot';
   content: string;
@@ -13,11 +11,12 @@ export function useChatbot() {
     { role: 'bot', content: 'Hi! I\'m Carlos\'s AI assistant. Ask me anything about his work, skills, or projects!' }
   ]);
   const [isLoading, setIsLoading] = useState(false);
-  const [generator, setGenerator] = useState<Text2TextGenerationPipeline | null>(null);
+  const [generator, setGenerator] = useState<any>(null);
 
   const initGenerator = useCallback(async () => {
     if (!generator) {
-      const gen = (await pipeline('text2text-generation', 'Xenova/LaMini-Flan-T5-78M')) as Text2TextGenerationPipeline;
+      const { pipeline } = await import('@xenova/transformers');
+      const gen = (await pipeline('text2text-generation', 'Xenova/LaMini-Flan-T5-78M')) as any;
       setGenerator(gen);
       return gen;
     }
