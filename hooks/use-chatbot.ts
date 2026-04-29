@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react';
-import { vectorStore } from '../lib/chatbot/vector-store.js';
-import type { KnowledgeItem } from '../lib/chatbot/vector-store.js';
+import { vectorStore } from '../lib/chatbot/vector-store';
+import type { KnowledgeItem } from '../lib/chatbot/vector-store';
 import { pipeline, Text2TextGenerationPipeline } from '@xenova/transformers';
 
 export interface Message {

@@ -1,5 +1,6 @@
+"use client";
 import React, { useState } from 'react';
-import { ChatInterface } from './ChatInterface.js';
+import { ChatInterface } from './ChatInterface';
 import { MessageCircle, X } from 'lucide-react';
 
 export const ChatBot: React.FC = () => {
