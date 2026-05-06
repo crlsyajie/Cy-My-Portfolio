@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/posts/carlos-yajie-fetizanan_ai-internship-learning-activity-7123456789012345678-abcd",
+    "image": "https://media.licdn.com/dms/image/placeholder",
+    "text": "Excited to share my journey as an AI Intern at Batangas State University! Learning so much about Smart Technologies. #AI #Internship #Tech",
+    "date": "2024-05-15"
+  },
+  {
+    "id": "2",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/p/C_samplepost1/",
+    "image": "https://instagram.fmnl1-1.fna.fbcdn.net/v/placeholder",
+    "text": "Designing the future, one pixel at a time. 🎨✨ #UIUX #Design #Creativity",
+    "date": "2024-05-10"
+  },
+  {
+    "id": "3",
+    "platform": "facebook",
+    "url": "https://www.facebook.com/carlos.yajie/posts/pfbid0samplepost",
+    "image": "https://scontent.fmnl1-1.fna.fbcdn.net/v/placeholder",
+    "text": "Just finished a new project! Check it out on my portfolio. 🚀 #WebDev #Portfolio #Success",
+    "date": "2024-05-05"
+  }
+]
