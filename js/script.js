@@ -338,6 +338,66 @@
         });
       }
 
+      /* ========== 11.5 FETCH AND RENDER MEDIA POSTS ========== */
+      const mediaContainer = document.getElementById('media-container');
+
+      async function fetchMediaPosts() {
+        try {
+          // Add a small delay to show the loader (optional, for effect)
+          // await new Promise(resolve => setTimeout(resolve, 800));
+
+          const response = await fetch('assets/social-posts.json');
+          if (!response.ok) throw new Error('Failed to fetch media posts');
+
+          const posts = await response.json();
+          renderMediaPosts(posts);
+        } catch (error) {
+          console.error('Error fetching media posts:', error);
+          mediaContainer.innerHTML = `
+            <div style="grid-column: 1 / -1; color: var(--text-muted); padding: 3rem 0;">
+              <p>Failed to load latest posts. Please try again later.</p>
+            </div>
+          `;
+        }
+      }
+
+      function renderMediaPosts(posts) {
+        if (!posts || posts.length === 0) {
+          mediaContainer.innerHTML = '<p style="grid-column: 1 / -1; color: var(--text-muted);">No recent posts found.</p>';
+          return;
+        }
+
+        mediaContainer.innerHTML = posts.map(post => `
+          <div class="media-card">
+            <div class="media-card-image">
+              <span class="media-platform-badge badge-${post.platform}">${post.platform}</span>
+              <img src="${post.image}" alt="${post.platform} post" onerror="this.src='./assets/image.png'">
+            </div>
+            <div class="media-card-content">
+              <p class="media-card-text">${post.text}</p>
+              <div class="media-card-footer">
+                <span class="media-card-date">${post.date}</span>
+                <a href="${post.url}" target="_blank" class="media-view-link">
+                  View Post ➔
+                </a>
+              </div>
+            </div>
+          </div>
+        `).join('');
+
+        // Re-observe new elements for reveal animation
+        const newCards = mediaContainer.querySelectorAll('.media-card');
+        newCards.forEach(card => {
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(40px)';
+          card.style.transition = 'opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1)';
+          revealObserver.observe(card);
+        });
+      }
+
+      // Initial fetch
+      fetchMediaPosts();
+
       /* ========== 11. CONTAINER SCROLL ANIMATION ========== */
       const scrollContainer = document.getElementById("scroll-container");
       const scrollHeader = document.getElementById("scroll-header");
