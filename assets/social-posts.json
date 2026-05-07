@@ -1,26 +1,26 @@
 [
   {
-    "id": "1",
+    "id": "li-sample",
     "platform": "linkedin",
-    "url": "https://www.linkedin.com/posts/carlos-yajie-fetizanan_ai-internship-learning-activity-7123456789012345678-abcd",
-    "image": "https://media.licdn.com/dms/image/placeholder",
-    "text": "Excited to share my journey as an AI Intern at Batangas State University! Learning so much about Smart Technologies. #AI #Internship #Tech",
-    "date": "2024-05-15"
+    "url": "https://www.linkedin.com/in/carlos-yajie-fetizanan",
+    "image": "./assets/image.png",
+    "text": "Check out my latest professional updates and projects on LinkedIn!",
+    "date": "2026-05-07"
   },
   {
-    "id": "2",
+    "id": "ig-sample",
     "platform": "instagram",
-    "url": "https://www.instagram.com/p/C_samplepost1/",
-    "image": "https://instagram.fmnl1-1.fna.fbcdn.net/v/placeholder",
-    "text": "Designing the future, one pixel at a time. 🎨✨ #UIUX #Design #Creativity",
-    "date": "2024-05-10"
+    "url": "https://www.instagram.com/crls_brook/",
+    "image": "./assets/image.png",
+    "text": "Exploring new design trends and sharing my creative process on Instagram.",
+    "date": "2026-05-07"
   },
   {
-    "id": "3",
+    "id": "fb-sample",
     "platform": "facebook",
-    "url": "https://www.facebook.com/carlos.yajie/posts/pfbid0samplepost",
-    "image": "https://scontent.fmnl1-1.fna.fbcdn.net/v/placeholder",
-    "text": "Just finished a new project! Check it out on my portfolio. 🚀 #WebDev #Portfolio #Success",
-    "date": "2024-05-05"
+    "url": "https://www.facebook.com/carlos.yajie",
+    "image": "./assets/image.png",
+    "text": "Stay tuned for more updates and behind-the-scenes content on Facebook.",
+    "date": "2026-05-07"
   }
 ]
